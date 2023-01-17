@@ -5,7 +5,7 @@ https://github.com/kwpl/devops_pub
 DockerHub:
 https://hub.docker.com/repository/docker/kwtest/haproxy/general
 
-docker pll kwtest/haproxy:ssl
+docker pull kwtest/haproxy:ssl
 
 Run:
 docker-compose -f docker-compose.yaml up -d
