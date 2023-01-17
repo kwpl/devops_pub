@@ -32,6 +32,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./Haproxy
-          file: Dockerfile
+          file: ./Haproxy/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/haproxy:ssl
