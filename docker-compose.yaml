@@ -9,7 +9,7 @@ services:
     - web2
     ports:
     - "443:443"
-    - "8404:8404"
+    - "444:444"
     networks:
     - haproxy
 

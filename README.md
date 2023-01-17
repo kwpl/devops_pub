@@ -1,1 +1,15 @@
 # devops_pub
+Repository:
+https://github.com/kwpl/devops_pub
+
+DockerHub:
+https://hub.docker.com/repository/docker/kwtest/haproxy/general
+
+docker pll kwtest/haproxy:ssl
+
+Run:
+docker-compose -f docker-compose.yaml up -d
+
+Test:
+curl -k http://127.0.0.1:444 - HaProxy dashboard
+curl -k http://127.0.0.1:443 - nginx web server
