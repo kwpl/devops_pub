@@ -1,10 +1,10 @@
 name: ci_hproxy_ssl
 on:
-  #push:
-  #  branches:
-  #    - 'main'
-  schedule:
-    - cron: "0 0 1 * *"
+  push:
+    branches:
+      - 'main'
+  #schedule:
+  #  - cron: "0 0 1 * *"
 jobs:
   build:
     runs-on: ubuntu-latest
