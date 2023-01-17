@@ -1,0 +1,32 @@
+version: '3'
+services:
+  haproxy:
+    image: "kwtest/haproxy:ssl"
+    container_name: haproxy
+    hostname: haproxy
+    depends_on:
+    - web1
+    - web2
+    ports:
+    - "443:443"
+    - "8404:8404"
+    networks:
+    - haproxy
+
+  web1:
+    image: "nginxdemos/hello:latest"
+    container_name: web1
+    hostname: web1
+    networks:
+    - haproxy
+
+  web2:
+    image: "nginxdemos/hello:latest"
+    container_name: web2
+    hostname: web2
+    networks:
+    - haproxy
+
+networks:
+  haproxy:
+    name: haproxy
