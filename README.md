@@ -20,10 +20,12 @@ https://hub.docker.com/repository/docker/kwtest/haproxy/general
 
 ## Test:
 
+### HaProxy dashboard
 ```
-    curl -k http://127.0.0.1:444 - HaProxy dashboard
+    curl -k http://127.0.0.1:444
 ```
 
+### Nginx web server
 ```
-    curl -k http://127.0.0.1:443 - nginx web server
+    curl -k http://127.0.0.1:443
 ```
