@@ -27,5 +27,5 @@ https://hub.docker.com/repository/docker/kwtest/haproxy/general
 
 ### Nginx web server
 ```
-    curl -k http://127.0.0.1:443
+    curl -k https://127.0.0.1:443
 ```
